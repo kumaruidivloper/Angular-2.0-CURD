@@ -21,7 +21,7 @@ export class AppComponent {
     this.employees.push(this.model);
     this.model = {};
     this.msg = "Record is sucessfully added.....";
-    console.log(reqDssssiv);
+    console.log(reqDiv);
   }
   deleteEmployee(i){
     this.employees.splice(i,1);
