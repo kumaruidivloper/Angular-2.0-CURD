@@ -17,11 +17,11 @@ export class AppComponent {
   model2:any={};
   msg:any="";
 
-  addEmployee(reqDiv:string){
+  addEmployee(Form){
     this.employees.push(this.model);
     this.model = {};
     this.msg = "Record is sucessfully added.....";
-    console.log(reqDiv);
+    Form.reset();
   }
   deleteEmployee(i){
     this.employees.splice(i,1);
